@@ -100,10 +100,48 @@ label quest:
 
     questhelper "Your objective is to find a downloadable virtual disk with network drivers update"
 
+    jump cafe
+
+label cafe:
+
     questhelper "You are in a Web Cafe, wanting something to eat or drink..."
 
     worker "Hi, welcome to the Web Cafe, what can i get for you?"
 
     player "I want..."
+
+    menu order:
+        "Water":
+            player "Water."
+        "Cookies and Tea":
+            player "My favourite Mint Cookies and Black Tea."
+        "This option is for McDonalds Workers":
+            jump secret1
+
+    worker "OK! Here you go!"
+
+    player "Wait, do i have to pay for this?"
+
+    worker "No, everything is free!"
+
+    player "Okay, thanks!"
+
+    worker "Bye!"
+
+    jump letsgooo
+
+label secret1:
+
+    player "1 Big Mac, Large french fries, medium Coke and 9 Chicken Nuggets"
+
+    worker "We're sorry, but we don't have McDonald's in this quest..."
+
+    player "Okay, i'll pick something else..."
+
+    jump order
+        
+label letsgooo:
+
+    player "lol unfinished"
 
     return
