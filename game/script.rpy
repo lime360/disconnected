@@ -142,6 +142,42 @@ label secret1:
         
 label letsgooo:
 
-    player "lol unfinished"
+    player "I went outside to take a walk."
 
+    funnydude69420 "Hey! I remember you!"
+
+    player "No way..."
+
+    player "It's that guy that messages me in AIM about this quest."
+
+    player "Hi."
+
+    funnydude69420 "Hello."
+
+    funnydude69420 "Thank you for joining this quest, wanna hear more about it?"
+
+    player "Sure!"
+
+    funnydude69420 "Well, i made this quest for people to get back their internet access."
+
+    player "You made it? Really?"
+
+    funnydude69420 "Yeah! And citizens of this world calls me a president!"
+
+    player "That's cool!"
+
+    funnydude69420 "So, as i was saying, you need to get back your internet..."
+
+    player "Yes! I need it so i can play Flash games."
+
+    funnydude69420 "Well, let me show you how to find the key for that."
+
+    funnydude69420 "*typing helper driver*"
+
+    helper "As i said earlier. The key is a virtual disk with a driver."
+
+    helper "Driver is located in a cave, which is a maze that you need to go through. Luckily you can save data and continue from the place you stuck"
+
+    helper "Good luck!"
+    
     return
