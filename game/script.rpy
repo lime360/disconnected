@@ -13,6 +13,10 @@ define questhelper = Character("Quest Helper", color="#FFFFFF")
 
 define worker = Character("Web Cafe Worker", color="#cf1180")
 
+define seller = Character("Some random guy who sells stuff for free", color="#0151b9")
+
+default item = "none"
+
 
 # The game starts here.
 
@@ -69,10 +73,10 @@ label website:
 
     menu index_html:
         "Read the instructions":
-          jump instructions
+            jump instructions
 
         "Start the quest":
-          jump quest
+            jump quest
 
 label instructions:
 
@@ -116,7 +120,7 @@ label cafe:
         "Cookies and Tea":
             player "My favourite Mint Cookies and Black Tea."
         "This option is for McDonalds Workers":
-            jump secret1
+            jump secret
 
     worker "OK! Here you go!"
 
@@ -130,7 +134,7 @@ label cafe:
 
     jump letsgooo
 
-label secret1:
+label secret:
 
     player "1 Big Mac, Large french fries, medium Coke and 9 Chicken Nuggets"
 
@@ -174,10 +178,62 @@ label letsgooo:
 
     funnydude69420 "*typing helper driver*"
 
-    helper "As i said earlier. The key is a virtual disk with a driver."
+    questhelper "As i said earlier. The key is a virtual disk with a driver."
 
-    helper "Driver is located in a cave, which is a maze that you need to go through. Luckily you can save data and continue from the place you stuck"
+    questhelper "Driver is located in a cave, which is a maze that you need to go through. Luckily you can save data and continue from the place you stuck"
 
-    helper "Good luck!"
+    questhelper "Good luck!"
+
+    player "Alright, lets do this!"
+
+    funnydude69420 "One more thing..."
+
+    player "Which?"
+
+    funnydude69420 "It's easy to get stuck in this cave. Luckily, you have a store where you can get items for an easier expirience!"
+
+    player "Okay..."
+
+    player "Then I went into the shop."
+
+    seller "Hi, what would you like to bring here on this adventure?"
+
+    player "Well..."
+
+    menu what2buy:
+        "A flashlight":
+                $ item = "flashlight"
+                player "I need a flashlight."
+        "A compass":
+                $ item = "compass"
+                player "I need a compass."
+        "Nothing":
+                jump yousure
+    
+    seller "Thank you and enjoy your adventures at this cave!"
+
+    jump cave
+
+label yousure:
+
+    seller "Really? Exploring this cave without a special item is not that easy!"
+
+    player "Whatever, I'll just go..."
+
+    seller "Okay then. Bye!"
+
+    jump cave
+
+label cave:
+
+    questhelper "developer notes:"
+
+    questhelper "disconnected is almost finished (only coding part)"
+
+    questhelper "i feel like the cave part will be the most hard-coded part of this game ever"
+
+    questhelper "btw i need an artist"
+
+    questhelper "ok bye"
     
     return
