@@ -33,17 +33,17 @@ label start:
 
     # These display lines of dialogue.
 
-    player "I went home after a long school day"
+    "I went home after a long school day"
 
-    player "I turned on my laptop, opened up the browser so i can play Flash games, but the browser says..."
+    "I turned on my laptop, opened up the browser so i can play Flash games, but the browser says..."
 
-    player "PAGE NOT FOUND. PLEASE REFRESH THE PAGE OR TRY TROUBLESHOOTNG THE NETWORK."
+    "PAGE NOT FOUND. PLEASE REFRESH THE PAGE OR TRY TROUBLESHOOTNG THE NETWORK."
 
-    player "That's strange, I connected it to the cable yesterday and it worked normally, maybe i should reconnect it?"
+    "That's strange, I connected it to the cable yesterday and it worked normally, maybe i should reconnect it?"
 
-    player "I tried to reconnect 5 times, i refresed the page 30 times, and i even restarted it! Nothing happened..."
+    "I tried to reconnect 5 times, i refresed the page 30 times, and i even restarted it! Nothing happened..."
 
-    player "Suddenly, i hear an AIM Message Sound, someone under the name funnydude69420 sent me a message..."
+    "Suddenly, i hear an AIM Message Sound, someone under the name funnydude69420 sent me a message..."
 
     funnydude69420 "Hey! I see that your internet is down."
 
@@ -61,13 +61,13 @@ label start:
 
 label website:
 
-    player "I opened this link and..."
+    "I opened this link and..."
 
-    player "It worked!"
+    "It worked!"
 
-    player "Now i have to navigate through options"
+    "Now i have to navigate through options"
 
-    player "Where should i click?"
+    "Where should i click?"
 
     menu index_html:
         "Read the instructions":
@@ -144,13 +144,13 @@ label secret:
         
 label letsgooo:
 
-    player "I went outside to take a walk."
+    "I went outside to take a walk."
 
     funnydude69420 "Hey! I remember you!"
 
-    player "No way..."
+    "No way..."
 
-    player "It's that guy that messages me in AIM about this quest."
+    "It's that guy that messaged me in AIM about this quest."
 
     player "Hi."
 
@@ -174,7 +174,7 @@ label letsgooo:
 
     funnydude69420 "Well, let me show you how to find the key for that."
 
-    funnydude69420 "*typing helper driver*"
+    funnydude69420 "*typing questhelper --docs driver*"
 
     questhelper "As i said earlier. The key is a virtual disk with a driver."
 
@@ -192,7 +192,7 @@ label letsgooo:
 
     player "Okay..."
 
-    player "Then I went into the shop."
+    "Then I went into the shop."
 
     seller "Hi, what would you like to bring here on this adventure?"
 
@@ -229,9 +229,9 @@ label cave:
 
 label caveNoLights:
 
-    player "Going there with no map was a mistake, i can't find a driver because there were no lights"
+    "Going there with no map was a mistake, i can't find a driver because there were no lights"
 
-    player "I'm stuck here..."
+    "I'm stuck here..."
 
     ".:. Game Over"
 
