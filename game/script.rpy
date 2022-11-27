@@ -15,8 +15,6 @@ define worker = Character("Web Cafe Worker", color="#cf1180")
 
 define seller = Character("Some random guy who sells stuff for free", color="#0151b9")
 
-default item = "none"
-
 
 # The game starts here.
 
@@ -201,12 +199,8 @@ label letsgooo:
     player "Well..."
 
     menu what2buy:
-        "A flashlight":
-                $ item = "flashlight"
-                player "I need a flashlight."
-        "A compass":
-                $ item = "compass"
-                player "I need a compass."
+        "A map":
+                player "I need a map."
         "Nothing":
                 jump yousure
     
@@ -222,18 +216,27 @@ label yousure:
 
     seller "Okay then. Bye!"
 
-    jump cave
+    jump caveNoLights
 
 label cave:
 
-    questhelper "developer notes:"
+    scene bg cavemap
+    with fade
 
-    questhelper "disconnected is almost finished (only coding part)"
+    questhelper "The map is shown on the screen for an easy play"
 
-    questhelper "i feel like the cave part will be the most hard-coded part of this game ever"
-
-    questhelper "btw i need an artist"
-
-    questhelper "ok bye"
-    
     return
+
+label caveNoLights:
+
+    player "Going there with no map was a mistake, i can't find a driver because there were no lights"
+
+    player "I'm stuck here..."
+
+    ".:. Game Over"
+
+    menu retry:
+        "Get a map":
+            jump what2buy
+        "Return to the main menu":
+            return
