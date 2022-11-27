@@ -188,7 +188,7 @@ label letsgooo:
 
     player "Which?"
 
-    funnydude69420 "It's easy to get stuck in this cave. Luckily, you have a store where you can get items for an easier expirience!"
+    funnydude69420 "It's easy to get stuck in this cave. Luckily, you have a store where you can get items for an easier expirience, but i mostly recommend a map with a glowing paper"
 
     player "Okay..."
 
@@ -200,9 +200,10 @@ label letsgooo:
 
     menu what2buy:
         "A map":
-                player "I need a map."
+            player "I need a map."
         "Nothing":
-                jump yousure
+            player "Nothing."
+            jump yousure
     
     seller "Thank you and enjoy your adventures at this cave!"
 
@@ -233,7 +234,7 @@ label caveNoLights:
 
     "I'm stuck here..."
 
-    ".:. Game Over"
+    "Game Over"
 
     menu retry:
         "Get a map":
