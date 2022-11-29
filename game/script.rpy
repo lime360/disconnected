@@ -228,34 +228,33 @@ label cave:
 
     questhelper "Use choices to navigate"
 
-    menu 1:
+    menu one:
         "Go straight.":
-            jump 2
+            jump two
 
-    menu 2:
+    menu two:
         "Go straight.":
-            jump 3
+            jump three
         "Go back":
-            jump 1
+            jump one
 
-    menu 3:
+    menu three:
         "Go straight.":
-            jump 4
+            jump four
         "Go back":
-            jump 2
+            jump two
 
-    menu 4:
+    menu four:
         "Go straight.":
             questhelper "You went into the tunnel!"
-            jump 5
+            jump five
         "Go the other way":
             jump otherway
         "Go back":
-            jump 3
+            jump three
 
-    menu 5:
+    menu five:
         "Go by yourself":
-            questhelper "You are almost close to the driver!"
             jump congratulations
         "Go the other way":
             jump dead
@@ -264,7 +263,7 @@ label otherway:
 
     player "There are dead ends everywhere!"
 
-    jump 4
+    jump four
 
 label dead:
 
@@ -272,7 +271,7 @@ label dead:
 
     menu retry:
         "Replay":
-            jump 1
+            jump one
         "Return to the main menu":
             return
 
