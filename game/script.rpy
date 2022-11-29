@@ -226,7 +226,55 @@ label cave:
 
     questhelper "The map is shown on the screen for an easy play"
 
-    return
+    questhelper "Use choices to navigate"
+
+    menu 1:
+        "Go straight.":
+            jump 2
+
+    menu 2:
+        "Go straight.":
+            jump 3
+        "Go back":
+            jump 1
+
+    menu 3:
+        "Go straight.":
+            jump 4
+        "Go back":
+            jump 2
+
+    menu 4:
+        "Go straight.":
+            questhelper "You went into the tunnel!"
+            jump 5
+        "Go the other way":
+            jump otherway
+        "Go back":
+            jump 3
+
+    menu 5:
+        "Go by yourself":
+            questhelper "You are almost close to the driver!"
+            jump congratulations
+        "Go the other way":
+            jump dead
+
+label otherway:
+
+    player "There are dead ends everywhere!"
+
+    jump 4
+
+label dead:
+
+    "Game Over"
+
+    menu retry:
+        "Replay":
+            jump 1
+        "Return to the main menu":
+            return
 
 label caveNoLights:
 
@@ -236,8 +284,23 @@ label caveNoLights:
 
     "Game Over"
 
-    menu retry:
+    menu retry2:
         "Get a map":
             jump what2buy
         "Return to the main menu":
             return
+
+label congratulations:
+
+    scene bg placeholder
+    with fade
+
+    questhelper "Congratulations! You can now finally have Internet!"
+
+    "And then, my laptop restarted after driver installation"
+
+    "Now i can enjoy Flash games."
+
+    "The End"
+
+    return
