@@ -35,7 +35,12 @@ label start:
 
     "I went home after a long school day"
 
+    scene bg pc-desktop
+    with fade
+
     "I turned on my laptop, opened up the browser so i can play Flash games, but the browser says..."
+
+    scene bg pc-template
 
     "PAGE NOT FOUND. PLEASE REFRESH THE PAGE OR TRY TROUBLESHOOTNG THE NETWORK."
 
@@ -44,6 +49,8 @@ label start:
     "I tried to reconnect 5 times, i refresed the page 30 times, and i even restarted it! Nothing happened..."
 
     "Suddenly, i hear an AIM Message Sound, someone under the name funnydude69420 sent me a message..."
+
+    scene bg pc-template
 
     funnydude69420 "Hey! I see that your internet is down."
 
@@ -63,6 +70,8 @@ label website:
 
     "I opened this link and..."
 
+    scene bg pc-template
+
     "It worked!"
 
     "Now i have to navigate through options"
@@ -77,6 +86,8 @@ label website:
             jump quest
 
 label instructions:
+
+    scene bg pc-template
 
     page "INSTRUCTIONS"
 
@@ -98,6 +109,9 @@ label instructions:
 
 label quest:
 
+    scene bg placeholder
+    with fade
+
     questhelper "Welcome to RECONNECTing the interNET (reconnect.net) Quest!"
 
     questhelper "Your objective is to find a downloadable virtual disk with network drivers update"
@@ -105,6 +119,9 @@ label quest:
     jump cafe
 
 label cafe:
+
+    scene bg placeholder
+    with fade
 
     questhelper "You are in a Web Cafe, wanting something to eat or drink..."
 
@@ -136,6 +153,8 @@ label secret:
 
     player "1 Big Mac, Large french fries, medium Coke and 9 Chicken Nuggets"
 
+    scene bg placeholder
+
     worker "We're sorry, but we don't have McDonald's in this quest..."
 
     player "Okay, i'll pick something else..."
@@ -143,6 +162,9 @@ label secret:
     jump order
         
 label letsgooo:
+
+    scene bg placeholder
+    with fade
 
     "I went outside to take a walk."
 
@@ -160,6 +182,8 @@ label letsgooo:
 
     player "Sure!"
 
+    scene bg placeholder
+
     funnydude69420 "Well, i made this quest for people to get back their internet access."
 
     player "You made it? Really?"
@@ -174,7 +198,7 @@ label letsgooo:
 
     funnydude69420 "Well, let me show you how to find the key for that."
 
-    funnydude69420 "*typing questhelper --docs driver*"
+    funnydude69420 "Helper, how do i get back the internet?"
 
     questhelper "As i said earlier. The key is a virtual disk with a driver."
 
@@ -193,6 +217,9 @@ label letsgooo:
     player "Okay..."
 
     "Then I went into the shop."
+
+    scene bg placeholder
+    with fade
 
     seller "Hi, what would you like to bring here on this adventure?"
 
@@ -277,6 +304,9 @@ label dead:
 
 label caveNoLights:
 
+    scene bg placeholder
+    with fade
+
     "Going there with no map was a mistake, i can't find a driver because there were no lights"
 
     "I'm stuck here..."
@@ -291,7 +321,7 @@ label caveNoLights:
 
 label congratulations:
 
-    scene bg placeholder
+    scene bg pc-desktop
     with fade
 
     questhelper "Congratulations! You can now finally have Internet!"
